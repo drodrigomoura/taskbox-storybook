@@ -28,7 +28,7 @@ export const reducer = (state, action) => {
     case actions.ARCHIVE_TASK:
       return taskStateReducer("TASK_ARCHIVED")(state, action);
     case actions.PIN_TASK:
-      return taskStateReducer("TASK_PIN")(state, action);
+      return taskStateReducer("TASK_PINNED")(state, action);
 
     default:
       return state;
