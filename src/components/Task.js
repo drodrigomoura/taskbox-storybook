@@ -16,7 +16,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
 
       <div className="title">
         <label>
-          <input type="text" value={title} readOnly={true} />
+          <input type="text" value={title} readOnly={true} style={{ textOverflow: 'ellipsis' }} />
         </label>
       </div>
 
